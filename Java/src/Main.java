@@ -14,6 +14,7 @@ public class Main {
             this.value = value;
         }
     }
+    
     public static ResultSet mapInputLineValues(int[] minterms, int n) {
         ArrayList<Integer> dF = new ArrayList<>();
         ArrayList<Integer> dComplementF = new ArrayList<>();
@@ -62,7 +63,6 @@ public class Main {
         int[] minterms = {0, 4, 5, 8, 9, 12, 13, 14, 15};
 
         String result;
-
         for (int n = 0; n < 8; n++) {
             result = mapInputLineValues(minterms, n).value;
 
