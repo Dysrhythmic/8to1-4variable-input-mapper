@@ -2,10 +2,14 @@ There are currently both Java and JavaScript implementations of this project. Th
 
 E.g. the function F(a,b,c,d) = Σm(0,4,5,8,9,12,13,14,15) is the one being computed by default.
 
-A table describing the same functionality as the program with the same default minterms:
+The program output given the above minterms and a variable count of 4:
+
+![image](https://user-images.githubusercontent.com/83474789/194729857-b129384b-d759-4417-90ae-2fe5b0de29f6.png)
+
+A table describing the same functionality as the program with the same minterms:
 
 ![image](https://user-images.githubusercontent.com/83474789/194688430-72481109-1d4d-420b-82fb-7f73fba886fb.png)
 
-A schematic designed using the program output:
+A schematic of a MUX with inputs mapped as described by the program output:
 
 ![image](https://user-images.githubusercontent.com/83474789/194688443-2d1ea869-b820-48ed-96a2-ed8676938841.png)
