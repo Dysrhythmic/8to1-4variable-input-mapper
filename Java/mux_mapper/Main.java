@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
-        InputParser ip = new InputParser("./../input.txt");
+        InputParser ip = new InputParser("./../input1.txt");
         int[] minterms = ip.getMinterms();
         int varCount = ip.getVarCount();
 
