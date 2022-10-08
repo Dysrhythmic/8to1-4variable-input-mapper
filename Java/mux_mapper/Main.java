@@ -1,12 +1,13 @@
+import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
-        int[] minterms = {0, 4, 5, 8, 9, 12, 13, 14, 15};
+        InputParser ip = new InputParser("./../input.txt");
+        int[] minterms = ip.getMinterms();
+        int varCount = ip.getVarCount();
 
-        for (int n = 0; n < 8; n++) {
-            InputLineMapper iLM = new InputLineMapper(minterms, n);
+        InputLineMapper ilm = new InputLineMapper(minterms, varCount);
+        String[] results = ilm.mapInputLines();
 
-            String output = String.format("input %d: %s", n, iLM.getResult());
-            System.out.println(output);
-        }
+        for (String result: results) { System.out.println(result); }
     }
 }

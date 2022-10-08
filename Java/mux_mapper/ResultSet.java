@@ -1,8 +1,8 @@
 public enum ResultSet {
     ZERO("0"),
     ONE("1"),
-    D("d"),
-    DComplement("d'");
+    X("d"),
+    XComplement("d'");
 
     public final String value;
 
