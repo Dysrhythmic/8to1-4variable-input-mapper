@@ -2,7 +2,7 @@
 // the last digit of the binary equivalent of the minterms, the digit in the 1's place, will be referred to as d
 
 // the minterms array represents the minterms that make the function being implemented by the MUX = 1
-const minterms = [0, 4, 5, 8, 9, 13, 14, 15];
+const minterms = [0, 4, 5, 8, 9, 12, 13, 14, 15];
 
 const sortMinterms = minterms => {
   // dF represents the intersection of minterms from the set that make the function being implemented by the MUX = 1 and
