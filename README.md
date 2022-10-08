@@ -2,9 +2,9 @@ There are currently both Java and JavaScript implementations of this project. Th
 
 E.g. the function F(a,b,c,d) = Σm(0,4,5,8,9,12,13,14,15) is the one being computed by default.
 
-The program output given the above minterms and a variable count of 4:
+The program output given the above minterms and a variable count of 4 (note: it uses `x` and `x'` to represent the variable being mapped to the input lines):
 
-![image](https://user-images.githubusercontent.com/83474789/194729857-b129384b-d759-4417-90ae-2fe5b0de29f6.png)
+![image](https://user-images.githubusercontent.com/83474789/194729987-6c292f0d-039e-403e-906f-b9b1c1d79c4b.png)
 
 A table describing the same functionality as the program with the same minterms:
 
