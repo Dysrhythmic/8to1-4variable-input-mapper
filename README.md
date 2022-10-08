@@ -1,8 +1,6 @@
-There are currently both Java and JavaScript implementations of the same functionality.
+There are currently both Java and JavaScript implementations of this project. The Java implementation has more functionality. The JavaScript assumes a 4 variable min function being mapped to 8:1 MUX. The Java implementation can work with various other variable amounts. It reads the variable count and minterms from a text file (input1.txt by default) and computes which values to connect to which inputs for the smallest single MUX that can handle that many variables.
 
-If asked to implement a 4 variable min function with a 8:1 MUX then this program will compute which values to connect to the 8 inputs of the MUX.
-
-E.g. the function F(a,b,c,d) = Σm(0,4,5,8,9,12,13,14,15) is the one being computed by default. Simply change the `minterms` array to include the desired minterm set to get the input values for the desired function.
+E.g. the function F(a,b,c,d) = Σm(0,4,5,8,9,12,13,14,15) is the one being computed by default.
 
 A table describing the same functionality as the program with the same default minterms:
 
