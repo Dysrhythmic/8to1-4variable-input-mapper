@@ -19,7 +19,7 @@ public class InputLineMapper {
     public String[] mapInputLines() {
         ArrayList<String> results = new ArrayList<>();
 
-        for (int n = 0; n < this.selectionLineCount; n++) {
+        for (int n = 0; n < (this.selectionLineCount - 1); n++) {
             // This will be the case when the function will be
             // false no matter the value of input d.
             if (!xComplementF.contains(2 * n) && !xF.contains(2 * n + 1)) {
