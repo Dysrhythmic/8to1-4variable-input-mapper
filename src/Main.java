@@ -59,14 +59,14 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int[] minterms = {0, 4, 5, 8, 9, 13, 14, 15};
+        int[] minterms = {0, 4, 5, 8, 9, 12, 13, 14, 15};
 
         String result;
 
         for (int n = 0; n < 8; n++) {
             result = mapInputLineValues(minterms, n).value;
 
-            String output = String.format("%s -> input %d", result, n);
+            String output = String.format("input %d: %s", n, result);
             System.out.println(output);
         }
     }
