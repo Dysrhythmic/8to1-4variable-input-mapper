@@ -21,25 +21,25 @@ public class InputLineMapper {
 
         for (int n = 0; n < (this.selectionLineCount); n++) {
             // This will be the case when the function will be
-            // false no matter the value of input d.
+            // false no matter the value of input x.
             if (!xComplementF.contains(2 * n) && !xF.contains(2 * n + 1)) {
                 InputLineMap map = new InputLineMap(ResultSet.ZERO, n);
                 results.add(map.getMap());
             }
             // This will be the case when the function will be
-            // true no matter the value of input d.
+            // true no matter the value of input x.
             else if (xComplementF.contains(2 * n) && xF.contains(2 * n + 1)) {
                 InputLineMap map = new InputLineMap(ResultSet.ONE, n);
                 results.add(map.getMap());
             }
             // This will be the case when the functions value will be
-            // the same as the value of input d.
+            // the same as the value of input x.
             else if (!xComplementF.contains(2 * n) && xF.contains(2 * n + 1)) {
                 InputLineMap map = new InputLineMap(ResultSet.X, n);
                 results.add(map.getMap());
             }
             // This will be the case when the functions value will be
-            // the opposite of the value of input d.
+            // the opposite of the value of input x.
             else if (xComplementF.contains(2 * n) && !xF.contains(2 * n + 1)) {
                 InputLineMap map = new InputLineMap(ResultSet.XComplement, n);
                 results.add(map.getMap());
