@@ -19,7 +19,7 @@ public class InputLineMapper {
     public String[] mapInputLines() {
         ArrayList<String> results = new ArrayList<>();
 
-        for (int n = 0; n < (this.selectionLineCount - 1); n++) {
+        for (int n = 0; n < (this.selectionLineCount); n++) {
             // This will be the case when the function will be
             // false no matter the value of input d.
             if (!xComplementF.contains(2 * n) && !xF.contains(2 * n + 1)) {
@@ -50,7 +50,7 @@ public class InputLineMapper {
     }
 
     public void setSelectionLineCount(int muxVariableCount) {
-        double product = Math.pow(muxVariableCount - 1, 2);
+        double product = Math.pow(2, --muxVariableCount);
         this.selectionLineCount = (int)product;
     }
 
